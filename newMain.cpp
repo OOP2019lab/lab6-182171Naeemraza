@@ -17,10 +17,10 @@ int main()
 	int size=4;
 	student*st2=new student[size];
 	st2[0]=student(3,2.0);
-    st2[0].addQuizScore(1);
+        st2[0].addQuizScore(1);
 	st2[0].addQuizScore(4);
 	st2[0].addQuizScore(10);
-    st2[1]=student(3,3.0);
+        st2[1]=student(3,3.0);
 	st2[1].addQuizScore(10);
 	st2[1].addQuizScore(4);
 	st2[1].addQuizScore(9);
@@ -41,5 +41,6 @@ int main()
 	{
 	  arrayofgpa[i].print();
 	}
+	delete[]st2;//delete dynamic array
 	system("pause");
 }
